@@ -16,12 +16,17 @@ This repository holds example source code for Python unit testing using **pytest
    ```
    pip install -r requirements.txt
    ```
-5. Download necessary test data:
+5. Navigate to the *code* folder
+6. Execute the following command:
+   ```
+   $ pip install -e .
+   ```
+7. Download necessary test data:
    1. Make the download script executable:
    ```
    $ chmod +x data/download_test_data.sh
    ```
-   2. Download test data (uses **gdown**):
+   1. Download test data (uses **gdown**):
    ```
    ./data/download_test_data.sh
    ```
