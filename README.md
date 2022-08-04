@@ -58,8 +58,21 @@ If you want pytest to be a little more verbose you can use the *-v* switch:
 $ pytest code -v
 ```
 
-## Selecting Tests By Name
-You can select which tests get executed by using the *-k* flag and providing a part or entire name of the test function:
+## Selecting Test By Node ID
+You can specify which tests to run based on their location withing Python modules.
+
+Example #1 (selecting just one test):
+```
+pytest code/tests/test_basics.py::test_simple_assertions
+```
+
+Example #2 (selecting more tests)
+```
+pytest code/tests/test_basics.py::test_simple_assertions code/tests/test_basics.py::test_advanced_assertions
+```
+
+## Selecting Tests By Keyword
+You can select which tests get executed using a keyword in their names by using the *-k* flag and providing a part or entire name of the test function:
 ```
 $ pytest code -k 'init'
 ```

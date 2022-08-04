@@ -20,6 +20,7 @@ echo ""
 echo "Downloading test data..."
 
 gdown 1PYHvZa2vFrjl22bBS7TPRprpe28WGnHF -O ${DATA_DIR}/config.yaml
+gdown 1Pb854DUTXAEZlFFHfEJfcOjww6fh9e-i -O ${DATA_DIR}/config2.yaml
 
 echo ""
 echo "Downloading test data DONE"
